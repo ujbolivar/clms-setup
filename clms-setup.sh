@@ -407,15 +407,15 @@ if [ "${YARN_VERSION%%.*}" -lt "$YARN_REQUIRED_VERSION" ]; then
         corepack enable
         
         # Set yarn version via corepack
-        corepack prepare yarn@stable --activate
+        corepack prepare yarn@3.2.3 --activate
         
         YARN_VERSION=$(yarn -v)
         echo -e "Yarn updated to ${GREEN}v$YARN_VERSION${NC}"
     else
         # Alternative approach for older Node.js versions
         echo -e "${YELLOW}Your Node.js version doesn't include corepack. Setting up Yarn 3.x manually...${NC}"
-        npm install -g yarn@stable
-        yarn set version stable
+        npm install -g yarn@3.2.3
+        yarn set version 3.2.3
         
         YARN_VERSION=$(yarn -v)
         echo -e "Yarn updated to ${GREEN}v$YARN_VERSION${NC}"
