@@ -62,7 +62,7 @@ If not already present on your system, the script will install:
 
 1. Download the setup script:
    ```bash
-   curl -o clms-setup.sh https://[URL_TO_SCRIPT]
+   curl -L https://raw.githubusercontent.com/ujbolivar/clms-setup/refs/heads/main/clms-setup.sh -o clms-setup.sh
    chmod +x clms-setup.sh
    ```
 
