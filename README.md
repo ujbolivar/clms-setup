@@ -128,4 +128,3 @@ The script will attempt to open the application in Google Chrome. If Chrome is n
 
 The script includes comprehensive error handling and OS-specific accommodations for macOS, Linux, and Windows (via WSL2). It remains running to keep the processes alive until you press Ctrl+C to terminate.
 
-For questions or issues, please contact [appropriate contact person/email].
